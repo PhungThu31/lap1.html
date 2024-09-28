@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Tạo Tài Khoản</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Tạo Tài Khoản Mới</h1>
+        </header>
+        <main>
+            <form id="accountForm">
+                <div class="form-group">
+                    <label for="username">Tên người dùng</label>
+                    <input type="text" id="username" placeholder="Enter your username." required>
+                    <div class="error-message" id="usernameError"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Mật khẩu</label>
+                    <div class="password-container">
+                        <input type="password" id="password" placeholder="Enter your password." required>
+                        <button type="button" id="togglePassword">Hiện</button>
+                    </div>
+                    <div class="error-message" id="passwordError"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Địa chỉ email</label>
+                    <input type="email" id="email" placeholder="Enter your email." required>
+                    <div class="error-message" id="emailError"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="fullName">Họ và tên</label>
+                    <input type="text" id="fullName" placeholder="Enter your full name.">
+                </div>
+
+                <div class="form-group">
+                    <label for="role">Vai trò</label>
+                    <select id="role" required>
+                        <option value="" disabled selected>Chọn vai trò</option>
+                        <option value="admin">Quản trị viên</option>
+                        <option value="user">Người dùng</option>
+                    </select>
+                    <div class="error-message" id="roleError"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="profilePicture">Hình ảnh đại diện</label>
+                    <input type="file" id="profilePicture" accept="image/*">
+                    <input type="text" id="imageURL" placeholder="URL hình ảnh (tuỳ chọn)">
+                    <div class="image-preview" id="imagePreview"></div>
+                </div>
+
+                <div class="form-group">
+                    <label>Ngày tạo tài khoản</label>
+                    <div id="createdAt" class="read-only">2024-09-28 12:00:00</div>
+                </div>
+
+                <div class="form-group">
+                    <label>Ngày cập nhật</label>
+                    <div id="updatedAt" class="read-only">2024-09-28 12:00:00</div>
+                </div>
+
+                <div class="form-buttons">
+                    <button type="submit" id="submitButton" disabled>Tạo tài khoản</button>
+                    <button type="button" id="cancelButton">Hủy</button>
+                </div>
+            </form>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

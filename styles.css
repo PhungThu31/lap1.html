@@ -1,0 +1,122 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e9ecef; /* Màu nền nhẹ nhàng */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 800px; /* Kích thước khung 800px */
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Bóng mờ nhẹ */
+    overflow: hidden;
+    border: 1px solid #dee2e6; /* Viền nhạt */
+}
+
+header {
+    background-color: #4a8c99; /* Màu xanh dịu nhẹ */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px 10px 0 0; /* Bo tròn góc trên của header */
+}
+
+main {
+    padding: 30px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #495057; /* Màu chữ nhạt */
+}
+
+.form-group input, .form-group select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ced4da; /* Viền nhạt */
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #fdfdfd; /* Nền nhạt cho input */
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus, .form-group select:focus {
+    border-color: #4a8c99; /* Đổi màu viền khi focus */
+    outline: none;
+}
+
+.password-container {
+    display: flex;
+    align-items: center;
+}
+
+.password-container button {
+    margin-left: 10px;
+    background-color: #4a8c99;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.password-container button:hover {
+    background-color: #3b7075; /* Màu khi di chuột qua */
+}
+
+.error-message {
+    color: red;
+    font-size: 0.9em;
+}
+
+.read-only {
+    background-color: #f0f0f0; /* Nền cho trường không chỉnh sửa */
+    padding: 12px;
+    border-radius: 5px;
+    color: #495057; /* Màu chữ nhạt */
+}
+
+.image-preview {
+    margin-top: 10px;
+    max-width: 100%;
+    height: auto;
+}
+
+.form-buttons {
+    margin-top: 30px;
+    text-align: right;
+}
+
+.form-buttons button {
+    padding: 10px 15px;
+    margin-left: 10px;
+    background-color: #4a8c99; /* Nền cho nút */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.form-buttons button:hover {
+    background-color: #3b7075; /* Màu khi di chuột qua */
+}
